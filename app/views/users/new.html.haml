@@ -1,0 +1,40 @@
+
+#big-box.border-radius.login-height
+  #header
+    %h1 
+      sign up
+      %span 
+        or
+        %a{:href=>"/login"}
+          sign in 
+  #login-outer.border-radius
+    #login.border-radius
+      = form_for @user do |f|
+        = errors_for(@user, "Opps, unable to add new user").html_safe
+        %ul.clearfix
+          %li.label
+            = f.label :email
+          %li.field
+            = f.text_field :email
+        %ul.clearfix
+          %li.label
+            = f.label :password
+          %li.field
+            = f.password_field :password
+        %ul.clearfix
+          %li.label
+            = f.label "Confirm Password"
+          %li.field
+            = f.text_field :password_confirmation
+          %li.label
+          %li.field
+            %button
+              Sign Up
+    %h2 you are missing out on...
+    %ul.row
+      %li deal 1
+      %li deal 2
+      %li deal 3
+      %li deal 3
+      %li deal 3
+      %li deal 3

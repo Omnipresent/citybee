@@ -1,0 +1,262 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+@import "blueprint/buttons";
+@import "fancy-buttons";
+@import "blueprint/interaction";
+// Combine the partials into a single screen stylesheet.
+@import "partials/page";
+@import "partials/form";
+@import "partials/two_col";
+@import "compass/css3";
+
+.notice {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.alert {
+ color: red;
+}
+.clearfix {display: block}
+ul {
+  list-style: disc outside none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none outside none;
+}
+li {margin-left: 30px}
+form {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  button {
+    float: right;
+    @include fancy-button(#33CC33);
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  ul{
+    li.label {
+      float: left;
+      margin-bottom: 5px;
+      line-height: 30px;
+      clear: left;
+      width: 180px;
+      text-align: left;
+      font-size: 16px;
+    } 
+    li.field {
+      float: left;
+      margin-bottom: 5px;
+      width: 280px;
+      input {
+        width: 280px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+#two-col{
+  @include container;
+  #right{
+    @include column(8);
+    background-color: #F1F1F1;
+  }
+  #left{
+    @include column(4);
+    ul {
+      margin-top: 15px;
+      li {
+        padding-bottom: 25px;
+      }
+    }
+  }
+  #bottom {
+    @include column(12);
+  }
+}
+.deal-image
+{
+height: 400px;
+          
+}
+.or-separator {
+  clear: both;
+  height: 23px;
+  line-height: 23px;
+  margin: 0 auto;
+  width: 448px;
+  background: url("http://s0.muscache.com/images/fb/fb-hr.png") no-repeat scroll center 50% transparent;
+  color: #DDDDDD;
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+}
+#login-outer {
+    @include column(10);
+    @include prepend(1);
+    @include append(1);
+    ul.row{
+      margin-top: 35px;
+      li {
+        float: left;
+        margin-right: 20px;
+      }
+    }
+    h2{
+      text-align: left;
+    }
+#login, #social-login{
+    height: 180px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #F1F1F1;
+    h2 {
+      text-align: left;
+      margin-left: 30px;
+      padding-top: 20px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}
+.login-height{
+  min-height: 450px;
+}
+#big-box {
+  @include container;
+  background-color: #FFFFFF;
+  margin-top: 15px;
+  #header
+  {
+    background-color: $box-title-color;
+    padding-top: 6px;
+    h1 {
+      font-size: 26px;
+      text-align: left;
+      margin-left: 10px;
+      font-weight: normal;
+      padding: 0 20px 5px;
+      span {
+        font-size: 18px;
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: $link-color; 
+}
+a:hover {
+  text-decoration: underline;
+}
+.border-radius {
+  @include border-radius(7px); }
+
+body  {
+  text-align: center;
+  color: $base-color;
+  font-family: helvetica;
+  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  background: #000 url("/images/Sketch2.jpg") center top fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+#masthead {
+  background-color: $base-color;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  .hgroup {
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+  }
+  h1 {
+    margin: 0;
+    a {
+      background: url("/images/logo.png");
+      height: 80px;
+      margin: 0;
+      width: 175px;
+    }
+  }
+}
+
+.nest {
+  background: $none-transparent;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  width: 960px;
+  z-index: 1000;
+}
+
+.ir {
+  background-repeat: no-repeat;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+
+
+#new-badge {
+  color: #8A8A8A;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 10px;
+  max-width: 420px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+
+  ul.unauth, ul.auth{
+    margin-top: 10px;
+    padding-top: 14px;
+    text-align: center;
+    a {color: #66C3FE;}
+  }
+
+}
+
+.border-radius-example {
+  width: 125px;
+  height: 125px;
+  background: red;
+  margin: 20px;
+  float: left;
+  padding: 5px;         
+}
+

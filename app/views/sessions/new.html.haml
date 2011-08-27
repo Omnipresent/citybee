@@ -1,0 +1,42 @@
+#big-box.border-radius.login-height
+  #header
+    %h1 
+      log in 
+      %span 
+        or
+        %a{:href=>"/signup"}
+          sign up
+  #login-outer.border-radius
+    - if flash.notice
+      .notice= flash.notice
+    - if flash.alert
+      .notice.alert= flash.alert
+    #login.border-radius
+      = form_tag sessions_path do
+        %ul.clearfix
+          %li.label
+            = label_tag :email
+          %li.field
+            = text_field_tag :email, params[:email]
+        %ul.clearfix
+          %li.label
+            = label_tag :password
+          %li.field
+            = password_field_tag :password
+            %a{:href=>"#"}
+              Forgot your password?
+          %li.label
+          %li.field
+            %button
+              %span Login
+  %h3.or-separator
+    or
+  #login-outer.border-radius
+    %h2
+    %ul.row
+      %li
+        %img{:src=>'/images/fb-login-button.png', :href=>"#"}
+      %li
+        %img{:src=>'/images/twitter-connect.png', :href=>"#"}
+      %li
+        %img{:src=>'/images/google-login-button.png', :href=>"#"}

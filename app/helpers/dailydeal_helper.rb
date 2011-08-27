@@ -1,0 +1,2 @@
+module DailydealHelper
+end
