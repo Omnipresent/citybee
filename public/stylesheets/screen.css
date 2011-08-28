@@ -59,7 +59,7 @@ a img {
 
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, form button {
+.fancy-button-reset-base-class, #bounty #buydeal button, form button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png') repeat-x bottom left;
   margin: 0;
@@ -72,12 +72,12 @@ a img {
   font-weight: bold;
 }
 /* line 165, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, form button::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, #bounty #buydeal button::-moz-focus-inner, form button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, form button:focus {
+.fancy-button-reset-base-class:focus, #bounty #buydeal button:focus, form button:focus {
   outline: none;
 }
 
@@ -559,46 +559,286 @@ body.two-col #content {
 }
 
 /* line 17, ../../app/stylesheets/screen.scss */
+#deal-desc {
+  color: #3A3B3D;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 24, ../../app/stylesheets/screen.scss */
+ul.deal-stats {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 437.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html ul.deal-stats {
+  overflow-x: hidden;
+}
+/* line 28, ../../app/stylesheets/screen.scss */
+ul.deal-stats .value, ul.deal-stats .label {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+/* line 34, ../../app/stylesheets/screen.scss */
+ul.deal-stats .label {
+  color: #58595B;
+  font-weight: normal;
+  top: 20px;
+}
+/* line 39, ../../app/stylesheets/screen.scss */
+ul.deal-stats .deal-on {
+  float: left;
+}
+/* line 42, ../../app/stylesheets/screen.scss */
+ul.deal-stats li {
+  height: 51px;
+  float: left;
+  border-right: 1px solid #BDBDBD;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 125px;
+  position: relative;
+  color: #58595B;
+}
+/* line 53, ../../app/stylesheets/screen.scss */
+ul.deal-stats li.last {
+  border: medium none;
+}
+
+/* line 57, ../../app/stylesheets/screen.scss */
+#deal-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+/* line 60, ../../app/stylesheets/screen.scss */
+#deal-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+/* line 67, ../../app/stylesheets/screen.scss */
+.verticalLine {
+  border-left: thick solid #DDDDDD;
+}
+
+/* line 70, ../../app/stylesheets/screen.scss */
+.horizontalLine {
+  margin-top: 5px;
+  border-top: thick solid #DDDDDD;
+}
+
+/* line 75, ../../app/stylesheets/screen.scss */
+#bounty {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 437.5px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #bounty {
+  overflow-x: hidden;
+}
+/* line 77, ../../app/stylesheets/screen.scss */
+#bounty #buydeal {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 156.25px;
+  margin-top: 18px;
+  margin-left: 25px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #bounty #buydeal {
+  overflow-x: hidden;
+}
+/* line 81, ../../app/stylesheets/screen.scss */
+#bounty #buydeal button {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 22px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: lime;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #baeeba), color-stop(10%, #70db70), color-stop(50%, #30c030), color-stop(50%, #2db42d), color-stop(100%, #43d043));
+  background-image: -webkit-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -moz-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -o-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -ms-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  border-color: #248f24;
+  text-shadow: green 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-bottom: 5px;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#bounty #buydeal button, #bounty #buydeal button:visited {
+  color: white;
+}
+/* line 31, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#bounty #buydeal button:hover, #bounty #buydeal button:focus {
+  background-color: #00f000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #adebad), color-stop(10%, #64d864), color-stop(50%, #2db42d), color-stop(50%, #2aa72a), color-stop(100%, #37cd37));
+  background-image: -webkit-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -moz-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -o-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -ms-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  border-color: #218321;
+  text-shadow: #007000 0px 1px 1px;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#bounty #buydeal button:hover, #bounty #buydeal button:hover:visited, #bounty #buydeal button:focus, #bounty #buydeal button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#bounty #buydeal button:active {
+  background-color: #00e000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2db42d), color-stop(30%, #2fbc2f), color-stop(50%, #2bab2b), color-stop(50%, #289f28), color-stop(100%, #3bce3b));
+  background-image: -webkit-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -moz-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -o-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -ms-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  border-color: #1e761e;
+  text-shadow: #006100 0px -1px -1px;
+  -moz-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  -webkit-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  -o-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#bounty #buydeal button:active, #bounty #buydeal button:active:visited {
+  color: white;
+}
+/* line 85, ../../app/stylesheets/screen.scss */
+#bounty #buydeal a {
+  background: url("http://a1.ak.lscdn.net/deals/images/bingy/gifting/gift-sm.png") no-repeat scroll left top transparent;
+  display: block;
+  margin-left: 10px;
+  padding: 5px 0 5px 30px;
+}
+/* line 92, ../../app/stylesheets/screen.scss */
+#bounty #offers {
+  float: right;
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 218.75px;
+  margin-right: 10px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #bounty #offers {
+  overflow-x: hidden;
+}
+/* line 96, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 218.75px;
+  text-align: left;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #bounty #offers #deals {
+  overflow-x: hidden;
+}
+/* line 99, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals dl, #bounty #offers #deals dt, #bounty #offers #deals dd {
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  color: #58595B;
+}
+/* line 105, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals dd {
+  color: green;
+}
+/* line 108, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals dt {
+  margin-right: 2px;
+}
+/* line 109, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals h3 {
+  color: #58595B;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 25px;
+}
+/* line 115, ../../app/stylesheets/screen.scss */
+#bounty #offers #deals dl {
+  float: left;
+}
+
+/* line 122, ../../app/stylesheets/screen.scss */
+#multiple-offers {
+  margin-left: 15px;
+}
+
+/* line 125, ../../app/stylesheets/screen.scss */
 .notice {
   text-align: left;
   padding-left: 10px;
   padding-top: 10px;
 }
 
-/* line 22, ../../app/stylesheets/screen.scss */
+/* line 130, ../../app/stylesheets/screen.scss */
 .alert {
   color: red;
 }
 
-/* line 25, ../../app/stylesheets/screen.scss */
+/* line 133, ../../app/stylesheets/screen.scss */
 .clearfix {
   display: block;
 }
 
-/* line 26, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 ul {
   list-style: disc outside none;
   margin: 0;
   padding: 0;
 }
 
-/* line 31, ../../app/stylesheets/screen.scss */
+/* line 139, ../../app/stylesheets/screen.scss */
 ul li {
   list-style: none outside none;
 }
 
-/* line 34, ../../app/stylesheets/screen.scss */
-li {
+/* line 142, ../../app/stylesheets/screen.scss */
+li.space {
   margin-left: 30px;
 }
 
-/* line 35, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 form {
   text-align: left;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-/* line 39, ../../app/stylesheets/screen.scss */
+/* line 147, ../../app/stylesheets/screen.scss */
 form button {
   float: right;
   -moz-border-radius: 6px;
@@ -671,7 +911,7 @@ form button:active {
 form button:active, form button:active:visited {
   color: white;
 }
-/* line 43, ../../app/stylesheets/screen.scss */
+/* line 151, ../../app/stylesheets/screen.scss */
 form h4 {
   font-size: 16px;
   font-weight: normal;
@@ -679,7 +919,7 @@ form h4 {
   margin-bottom: 20px;
   margin-left: 30px;
 }
-/* line 51, ../../app/stylesheets/screen.scss */
+/* line 159, ../../app/stylesheets/screen.scss */
 form ul li.label {
   float: left;
   margin-bottom: 5px;
@@ -689,38 +929,39 @@ form ul li.label {
   text-align: left;
   font-size: 16px;
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
 form ul li.field {
   float: left;
   margin-bottom: 5px;
   width: 280px;
 }
-/* line 64, ../../app/stylesheets/screen.scss */
+/* line 172, ../../app/stylesheets/screen.scss */
 form ul li.field input {
   width: 280px;
   font-size: 18px;
 }
 
-/* line 71, ../../app/stylesheets/screen.scss */
+/* line 179, ../../app/stylesheets/screen.scss */
 #two-col {
   width: 750px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 181, ../../app/stylesheets/screen.scss */
 #two-col #right {
   display: inline;
   float: left;
   margin-right: 0px;
-  width: 500px;
-  background-color: #F1F1F1;
+  width: 468.75px;
+  padding-left: 31.25px;
+  text-align: left;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #two-col #right {
   overflow-x: hidden;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 #two-col #left {
   display: inline;
   float: left;
@@ -731,32 +972,78 @@ form ul li.field input {
 * html #two-col #left {
   overflow-x: hidden;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 #two-col #left ul {
   margin-top: 15px;
 }
-/* line 81, ../../app/stylesheets/screen.scss */
+/* line 190, ../../app/stylesheets/screen.scss */
 #two-col #left ul li {
   padding-bottom: 25px;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 195, ../../app/stylesheets/screen.scss */
 #two-col #bottom {
   display: inline;
   float: left;
   margin-right: 0px;
   width: 750px;
+  background-color: #E9E9E9;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #two-col #bottom {
   overflow-x: hidden;
 }
+/* line 198, ../../app/stylesheets/screen.scss */
+#two-col #bottom h2 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 28px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+/* line 205, ../../app/stylesheets/screen.scss */
+#two-col #bottom #fine-print {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 468.75px;
+  padding-left: 31.25px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #two-col #bottom #fine-print {
+  overflow-x: hidden;
+}
+/* line 210, ../../app/stylesheets/screen.scss */
+#two-col #bottom #fine-print p {
+  font-size: 12px;
+  padding-right: 20px;
+}
+/* line 215, ../../app/stylesheets/screen.scss */
+#two-col #bottom #locations {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 250px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #two-col #bottom #locations {
+  overflow-x: hidden;
+}
+/* line 218, ../../app/stylesheets/screen.scss */
+#two-col #bottom #locations ul.address li {
+  color: #676767;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
 
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 229, ../../app/stylesheets/screen.scss */
 .deal-image {
   height: 400px;
 }
 
-/* line 95, ../../app/stylesheets/screen.scss */
+/* line 233, ../../app/stylesheets/screen.scss */
 .or-separator {
   clear: both;
   height: 23px;
@@ -771,7 +1058,7 @@ form ul li.field input {
   text-align: center;
 }
 
-/* line 108, ../../app/stylesheets/screen.scss */
+/* line 246, ../../app/stylesheets/screen.scss */
 #login-outer {
   display: inline;
   float: left;
@@ -784,27 +1071,27 @@ form ul li.field input {
 * html #login-outer {
   overflow-x: hidden;
 }
-/* line 112, ../../app/stylesheets/screen.scss */
+/* line 250, ../../app/stylesheets/screen.scss */
 #login-outer ul.row {
   margin-top: 35px;
 }
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 252, ../../app/stylesheets/screen.scss */
 #login-outer ul.row li {
   float: left;
   margin-right: 20px;
 }
-/* line 119, ../../app/stylesheets/screen.scss */
+/* line 257, ../../app/stylesheets/screen.scss */
 #login-outer h2 {
   text-align: left;
 }
-/* line 122, ../../app/stylesheets/screen.scss */
+/* line 260, ../../app/stylesheets/screen.scss */
 #login-outer #login, #login-outer #social-login {
   height: 180px;
   margin-top: 15px;
   margin-bottom: 20px;
   background-color: #F1F1F1;
 }
-/* line 127, ../../app/stylesheets/screen.scss */
+/* line 265, ../../app/stylesheets/screen.scss */
 #login-outer #login h2, #login-outer #social-login h2 {
   text-align: left;
   margin-left: 30px;
@@ -813,12 +1100,12 @@ form ul li.field input {
   font-weight: normal;
 }
 
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 274, ../../app/stylesheets/screen.scss */
 .login-height {
   min-height: 450px;
 }
 
-/* line 139, ../../app/stylesheets/screen.scss */
+/* line 277, ../../app/stylesheets/screen.scss */
 #big-box {
   width: 750px;
   margin: 0 auto;
@@ -827,12 +1114,12 @@ form ul li.field input {
   background-color: #FFFFFF;
   margin-top: 15px;
 }
-/* line 144, ../../app/stylesheets/screen.scss */
+/* line 282, ../../app/stylesheets/screen.scss */
 #big-box #header {
   background-color: #59deff;
   padding-top: 6px;
 }
-/* line 147, ../../app/stylesheets/screen.scss */
+/* line 285, ../../app/stylesheets/screen.scss */
 #big-box #header h1 {
   font-size: 26px;
   text-align: left;
@@ -840,27 +1127,27 @@ form ul li.field input {
   font-weight: normal;
   padding: 0 20px 5px;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 291, ../../app/stylesheets/screen.scss */
 #big-box #header h1 span {
   font-size: 18px;
 }
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 294, ../../app/stylesheets/screen.scss */
 #big-box #header h1 a {
   font-size: 20px;
 }
 
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 a {
   text-decoration: none;
   color: #0066cc;
 }
 
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 304, ../../app/stylesheets/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 169, ../../app/stylesheets/screen.scss */
+/* line 307, ../../app/stylesheets/screen.scss */
 .border-radius {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -870,7 +1157,7 @@ a:hover {
   border-radius: 7px;
 }
 
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 310, ../../app/stylesheets/screen.scss */
 body {
   text-align: center;
   color: #262626;
@@ -881,13 +1168,13 @@ body {
   background-size: cover;
 }
 
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 320, ../../app/stylesheets/screen.scss */
 #background {
   height: 100%;
   width: 100%;
   position: fixed;
 }
-/* line 186, ../../app/stylesheets/screen.scss */
+/* line 324, ../../app/stylesheets/screen.scss */
 #background img {
   width: 100%;
   height: 100%;
@@ -896,24 +1183,24 @@ body {
   z-index: -1;
 }
 
-/* line 195, ../../app/stylesheets/screen.scss */
+/* line 333, ../../app/stylesheets/screen.scss */
 #masthead {
   background-color: #262626;
   height: 85px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 200, ../../app/stylesheets/screen.scss */
+/* line 338, ../../app/stylesheets/screen.scss */
 #masthead .hgroup {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 343, ../../app/stylesheets/screen.scss */
 #masthead h1 {
   margin: 0;
 }
-/* line 207, ../../app/stylesheets/screen.scss */
+/* line 345, ../../app/stylesheets/screen.scss */
 #masthead h1 a {
   background: url("/images/logo.png");
   height: 80px;
@@ -921,7 +1208,7 @@ body {
   width: 175px;
 }
 
-/* line 216, ../../app/stylesheets/screen.scss */
+/* line 354, ../../app/stylesheets/screen.scss */
 .nest {
   background: none repeat scroll 0 0 transparent;
   margin: 0 auto;
@@ -931,7 +1218,7 @@ body {
   z-index: 1000;
 }
 
-/* line 225, ../../app/stylesheets/screen.scss */
+/* line 363, ../../app/stylesheets/screen.scss */
 .ir {
   background-repeat: no-repeat;
   direction: ltr;
@@ -941,7 +1228,7 @@ body {
   text-indent: -999em;
 }
 
-/* line 235, ../../app/stylesheets/screen.scss */
+/* line 373, ../../app/stylesheets/screen.scss */
 #new-badge {
   color: #8A8A8A;
   font-weight: normal;
@@ -952,18 +1239,18 @@ body {
   right: 10px;
   top: 12px;
 }
-/* line 245, ../../app/stylesheets/screen.scss */
+/* line 383, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth, #new-badge ul.auth {
   margin-top: 10px;
   padding-top: 14px;
   text-align: center;
 }
-/* line 249, ../../app/stylesheets/screen.scss */
+/* line 387, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth a, #new-badge ul.auth a {
   color: #66C3FE;
 }
 
-/* line 254, ../../app/stylesheets/screen.scss */
+/* line 392, ../../app/stylesheets/screen.scss */
 .border-radius-example {
   width: 125px;
   height: 125px;

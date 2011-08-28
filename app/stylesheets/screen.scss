@@ -14,6 +14,114 @@
 @import "partials/two_col";
 @import "compass/css3";
 
+#deal-desc {
+  color: #3A3B3D;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+ul.deal-stats {
+  @include column(7);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .value,.label {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+  .label {
+    color: #58595B;
+    font-weight: normal;
+    top: 20px;
+  }
+  .deal-on {
+    float: left;
+  }
+  li {
+    height: 51px;
+    float: left;
+    border-right: 1px solid #BDBDBD;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 125px;
+    position: relative;
+    color: #58595B;
+  }
+  li.last {
+    border: medium none;
+  }
+}
+#deal-title {
+  margin-bottom: 10px;
+  text-align: left;
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+}
+.verticalLine {
+  border-left: thick solid #DDDDDD;
+}
+.horizontalLine{
+  margin-top: 5px;
+  border-top: thick solid #DDDDDD;
+}
+#bounty
+{
+  @include column (7);
+  #buydeal {
+      @include column(2.5);
+      margin-top: 18px;
+      margin-left: 25px;
+    button {
+      @include fancy-button(#33CC33, 22px);
+      margin-bottom: 5px;
+    }
+    a {
+      background: url("http://a1.ak.lscdn.net/deals/images/bingy/gifting/gift-sm.png") no-repeat scroll left top transparent;
+      display: block;
+      margin-left: 10px;
+      padding: 5px 0 5px 30px; 
+    }
+  }
+  #offers {
+    float: right;
+    @include column(3.5);
+    margin-right: 10px;
+    #deals{
+      @include column (3.5);
+      text-align: left;
+      dl, dt, dd {
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+        color: #58595B;
+      }
+      dd { 
+        color: green;
+      }
+      dt { margin-right: 2px;}
+      h3{
+        color: #58595B;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 25px;
+      }
+      dl{
+        float: left;
+      }
+    }
+  }
+ 
+}
+#multiple-offers {
+  margin-left: 15px;
+}
 .notice {
   text-align: left;
   padding-left: 10px;
@@ -31,7 +139,7 @@ ul {
 ul li {
   list-style: none outside none;
 }
-li {margin-left: 30px}
+li.space {margin-left: 30px}
 form {
   text-align: left;
   padding-bottom: 20px;
@@ -71,8 +179,9 @@ form {
 #two-col{
   @include container;
   #right{
-    @include column(8);
-    background-color: #F1F1F1;
+    @include column(7.5);
+    @include prepend(.5);
+    text-align: left;
   }
   #left{
     @include column(4);
@@ -85,6 +194,35 @@ form {
   }
   #bottom {
     @include column(12);
+    background-color: #E9E9E9;
+    h2 {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 28px;
+      text-transform: lowercase;
+      margin-bottom: 10px;
+    }
+    #fine-print {
+      @include column(7.5);
+      @include prepend (.5);
+      text-align: left;
+      margin-bottom: 20px;
+      p {
+        font-size: 12px;
+        padding-right: 20px;
+      }
+    }
+    #locations {
+      @include column(4);
+      ul.address {
+        li {
+          color: #676767;
+          margin-bottom: 10px;
+          padding-left: 20px;
+          text-align: left;
+        }
+      }
+    }
   }
 }
 .deal-image
