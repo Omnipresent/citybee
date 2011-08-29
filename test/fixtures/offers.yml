@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  deal_id: 1
+  price: 1
+  value: 1
+  title: MyString
+
+two:
+  deal_id: 1
+  price: 1
+  value: 1
+  title: MyString

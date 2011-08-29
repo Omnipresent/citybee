@@ -1,0 +1,49 @@
+#big-box.border-radius
+  #header
+    %h1 Add new deal
+  #new-deals
+    #deal-info
+      %h2 Deal Info
+      = form_for @deal do |f|
+        = errors_for(@deal, "Oops, unable to add new deal").html_safe
+        %ul.clearfix
+          %li.label
+            = f.label :title
+          %li.field
+            = f.text_field :title
+        %ul.clearfix
+          %li.label
+            = f.label :min_needed
+          %li.field
+            = f.text_field :min_needed
+        %ul.clearfix
+          %li.label
+            = f.label :max_allowed
+          %li.field
+            = f.text_field :max_allowed
+        %ul.clearfix
+          %li.label
+            = f.label :end_at
+          %li.field
+            = f.text_field :end_at
+        %ul.clearfix
+          %li.label
+            = f.label :summary
+          %li.field
+            = f.text_field :summary
+        %ul.clearfix
+          %li.label
+            = f.label :fine_print
+          %li.field
+            = f.text_field :fine_print
+        -for offer in @deal.offers
+          =fields_for "deal[offer_attributes][]", offer do |offer_form|
+            %ul.clearfix
+              %li.label
+                = offer_form.label :title
+              %li.field
+                = offer_form.text_field :title
+        %ul.clearfix
+          %li.label
+          %li.field
+            %button Add

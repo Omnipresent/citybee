@@ -10,7 +10,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110821030637) do
+ActiveRecord::Schema.define(:version => 20110828212245) do
+
+  create_table "deals", :force => true do |t|
+    t.string   "title"
+    t.integer  "min_needed"
+    t.integer  "max_allowed"
+    t.datetime "end_at"
+    t.string   "summary"
+    t.string   "fine_print"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.integer  "deal_id"
+    t.string   "street_1"
+    t.string   "street_2"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "offers", :force => true do |t|
+    t.integer  "deal_id"
+    t.integer  "price"
+    t.integer  "value"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"

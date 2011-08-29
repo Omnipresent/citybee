@@ -14,6 +14,20 @@
 @import "partials/two_col";
 @import "compass/css3";
 
+#new-deals {
+  @include column(11);
+  @include prepend(1);
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+  }
+  #deal-info {
+  }
+  #offer-info{
+  }
+}
+
 #deal-desc {
   color: #3A3B3D;
   line-height: 18px;

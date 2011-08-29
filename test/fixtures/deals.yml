@@ -1,0 +1,15 @@
+one:
+  title: MyString
+  min_needed: 1
+  max_allowed: 1
+  end_at: 2011-08-28 16:27:37
+  summary: MyString
+  fine_print: MyString
+
+two:
+  title: MyString
+  min_needed: 1
+  max_allowed: 1
+  end_at: 2011-08-28 16:27:37
+  summary: MyString
+  fine_print: MyString

@@ -1,4 +1,7 @@
 Citybee::Application.routes.draw do
+
+  resources :deals
+
   get "sessions/new"
 
   get "users/new"
