@@ -1,0 +1,22 @@
+#big-box.border-radius
+  #header
+    %h1
+      all deals
+  %table
+    %tr
+      %th Title
+      %th End At
+      %th Min
+      %th Max
+    - for deal in @deals
+      %tr
+        %td 
+          =deal.title
+        %td 
+          = time_diff_in_natural_language(Time.now, deal.end_at)
+        %td 
+          =deal.min_needed
+        %td 
+          =deal.max_allowed
+        %td
+          =link_to "Edit", edit_deal_path(deal)

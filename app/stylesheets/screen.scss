@@ -29,6 +29,7 @@
 }
 
 #deal-desc {
+  @include column (7.3);
   color: #3A3B3D;
   line-height: 18px;
   margin-top: 5px;
@@ -136,10 +137,18 @@ ul.deal-stats {
 #multiple-offers {
   margin-left: 15px;
 }
-.notice {
+.notice.border-radius {
+  @include container;
+  margin-top: 15px;
   text-align: left;
-  padding-left: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  #msg {
+    margin-left: 10px;
+  }
+
 }
 .alert {
  color: red;
@@ -178,6 +187,7 @@ form {
       width: 180px;
       text-align: left;
       font-size: 16px;
+      margin-left: 10px;
     } 
     li.field {
       float: left;
@@ -271,8 +281,8 @@ height: 400px;
     h2{
       text-align: left;
     }
-#login, #social-login{
-    height: 180px;
+#social-login{
+    height: 280px;
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #F1F1F1;
@@ -285,13 +295,96 @@ height: 400px;
     }
   }
 }
+.login-form-height {
+  height: 180px;
+}
+.signup-form-height {
+  height: 280px;
+}
+#login{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #F1F1F1;
+    h2 {
+      text-align: left;
+      margin-left: 30px;
+      padding-top: 20px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
 .login-height{
   min-height: 450px;
 }
+#signup-page
+{
+  @include container;
+  background: none repeat scroll 0 0 #FFFFFF;
+  @include border-radius(10px);
+  #signup-content {
+    margin: 5px 0;
+    padding: 10px;
+  }
+  h1 {
+    background-color: $box-title-color;
+    margin-bottom: 10px;
+    height: 40px;
+    @include border-radius(10px);
+    font-size: 14px;
+    text-align: left;
+    line-height: 40px;
+    width: 95%;
+    font-weight: bold;
+    padding-left: 5%;
+  }
+  #signup-section-form {
+    background: none repeat scroll 0 0 #EEEEEE;
+    @include border-radius(5px);
+    li.form_floated_half {
+      margin-right: 20px;
+      width: 265px;
+      clear: none;
+      display: block;
+      float: left;
+      margin: 0 2px 15px 0;
+    }
+  }
+  
+}
+ul.fields {
+  
+
+}
+
 #big-box {
   @include container;
   background-color: #FFFFFF;
   margin-top: 15px;
+  table {
+    padding: 10px;
+    tr th {
+      font-weight: bold;
+      width: 180px;
+    }
+    tr  {
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  ul.otherdeals {
+    @include column(12);
+    li {
+      @include column(5.5);
+      @include prepend(.5);
+      text-align: left;
+      position: relative;
+    }
+    #img {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
   #header
   {
     background-color: $box-title-color;

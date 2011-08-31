@@ -24,4 +24,8 @@
               %a{:href=>"/login"} Log in 
               |
               %a{:href=>"/signup"} Sign up
+    - if flash.notice
+      .notice.border-radius
+        #msg
+          = flash.notice
     = yield

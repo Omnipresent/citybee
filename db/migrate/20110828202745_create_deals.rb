@@ -5,8 +5,8 @@ class CreateDeals < ActiveRecord::Migration
       t.integer :min_needed
       t.integer :max_allowed
       t.datetime :end_at
-      t.string :summary
-      t.string :fine_print
+      t.text  :summary
+      t.text  :fine_print
       t.timestamps
     end
   end

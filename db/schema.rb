@@ -10,17 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110828212245) do
+ActiveRecord::Schema.define(:version => 20110831014719) do
 
   create_table "deals", :force => true do |t|
     t.string   "title"
     t.integer  "min_needed"
     t.integer  "max_allowed"
     t.datetime "end_at"
-    t.string   "summary"
-    t.string   "fine_print"
+    t.text     "summary"
+    t.text     "fine_print"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "featured_deal"
   end
 
   create_table "locations", :force => true do |t|
@@ -50,6 +51,8 @@ ActiveRecord::Schema.define(:version => 20110828212245) do
     t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end

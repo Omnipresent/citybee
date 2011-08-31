@@ -1,4 +1,3 @@
-
 #big-box.border-radius.login-height
   #header
     %h1 
@@ -8,9 +7,19 @@
         %a{:href=>"/login"}
           sign in 
   #login-outer.border-radius
-    #login.border-radius
+    #login.signup-form-height.border-radius
       = form_for @user do |f|
         = errors_for(@user, "Opps, unable to add new user").html_safe
+        %ul.clearfix
+          %li.label
+            = f.label "First Name"
+          %li.field
+            = f.text_field :first_name
+        %ul.clearfix
+          %li.label
+            = f.label "Last Name"
+          %li.field
+            = f.text_field :last_name
         %ul.clearfix
           %li.label
             = f.label :email
@@ -25,7 +34,7 @@
           %li.label
             = f.label "Confirm Password"
           %li.field
-            = f.text_field :password_confirmation
+            = f.password_field :password_confirmation
           %li.label
           %li.field
             %button

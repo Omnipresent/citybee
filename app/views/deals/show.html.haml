@@ -1,0 +1,98 @@
+- if flash.notice
+  .notice.border-radius
+    #msg
+      = flash.notice
+#big-box.border-radius
+  #header
+    %h1
+      Featured Deal
+  #two-col
+    #right
+      #deal-title
+        %h1 
+          = @deal.title
+      #multiple-offers
+        #bounty
+          #offers
+            #deals
+              %h3 
+                = @deal.offers.first.title if @deal.offers.size > 0
+              %dl
+                %dt You Pay:
+                %dd 
+                  $
+                  =@deal.offers.first.price if @deal.offers.size > 0
+                %dt Value
+                %dd 
+                  $
+                  =@deal.offers.first.value if @deal.offers.size > 0
+            - if @deal.offers.count == 2
+              #deals.horizontalLine.second
+                %h3 $20 Worth of Spa
+                %dl
+                  %dt You Pay:
+                  %dd $10
+                  %dt Value
+                  %dd $20
+          #buydeal
+            %button 
+              buy now!
+            %a{:href=>"#"} send as a gift
+        %ul.deal-stats
+          %li 
+            .value
+              %img{:style=>"",:src=>"http://assets1.grouponcdn.com/images/groupon/icons/tipometer/check_mark.png"}
+            .label deal is on
+          %li 
+            .value 500
+            .label purchased
+          %li.last
+            .value 
+              = time_diff_in_natural_language(Time.now, @deal.end_at)
+            .label remaining
+      #deal-desc.clearfix
+        =@deal.summary
+    #left
+      .deal-image{:style=>"background: url('http://a5.ak.lscdn.net/imgs/70c97b4b-819f-4b06-8e6b-c5c362c96d1c/280_q60_.jpg') no-repeat scroll left top #EFEFEF"}
+    #bottom 
+      #fine-print
+        %h2 the fine print
+        %p 
+          =@deal.fine_print
+      #locations
+        %h2 locations
+        %ul.address
+          %li
+            %span.street 
+              =@deal.locations.first.street_1 if @deal.locations.size > 0
+            %br
+            %span.phone  
+              =@deal.locations.first.phone if @deal.locations.size > 0
+            |
+            %span.directions
+              %a{:href=>"#"} get directions
+          - if @deal.locations.count == 2
+            %li
+              %span.street 1234 Fake Street
+              %br
+              %span.phone 703-545-3434 
+              |
+              %span.directions
+                %a{:href=>"#"} get directions
+
+#big-box.border-radius
+  #header
+    %h1
+      other deals
+  %ul.otherdeals
+    - for deal in @deals
+      %li
+        %a{:href=>"#{deal.id}"} 
+          =deal.title
+        %p 
+          $
+          =deal.offers.first.price if deal.offers.size > 0
+          --
+          =deal.offers.first.title if deal.offers.size > 0
+        %p 
+          =deal.locations.first.city if deal.locations.size > 0

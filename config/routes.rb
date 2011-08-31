@@ -1,6 +1,7 @@
 Citybee::Application.routes.draw do
 
-  resources :deals
+
+  resources :somes
 
   get "sessions/new"
 
@@ -8,11 +9,12 @@ Citybee::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "logout" => "sessions#destroy", :as => "logout"
   get "signup" => "users#new", :as=>"signup"
-  root  :to => "dailydeal#show"
+  root  :to => "deals#show"
   resources :users
   resources :sessions
+  resources :deals
 
-  match "/dailydeal" => "dailydeal#show"
+  match "/dailydeal" => "deals#show"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

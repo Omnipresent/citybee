@@ -6,7 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to "/dailydeal", :notice => "Signed up!"
+      session[:user_id] = @user.id
+      redirect_to "/dailydeal", :notice => "Welcome to CityBee!"
     else
       render "new"
     end
