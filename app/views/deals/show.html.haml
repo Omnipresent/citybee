@@ -14,26 +14,33 @@
       #multiple-offers
         #bounty
           #offers
-            #deals
-              %h3 
-                = @deal.offers.first.title if @deal.offers.size > 0
-              %dl
-                %dt You Pay:
-                %dd 
-                  $
-                  =@deal.offers.first.price if @deal.offers.size > 0
-                %dt Value
-                %dd 
-                  $
-                  =@deal.offers.first.value if @deal.offers.size > 0
-            - if @deal.offers.count == 2
-              #deals.horizontalLine.second
-                %h3 $20 Worth of Spa
-                %dl
-                  %dt You Pay:
-                  %dd $10
-                  %dt Value
-                  %dd $20
+            - @deal.offers.each_with_index do |offer, index|
+              - if index == 0
+                #deals
+                  %h3 
+                    = offer.title 
+                  %dl
+                    %dt You Pay:
+                    %dd 
+                      $
+                      =offer.price 
+                    %dt Value
+                    %dd 
+                      $
+                      =offer.value 
+              - else
+                #deals.horizontalLine.second
+                  %h3 
+                    = offer.title 
+                  %dl
+                    %dt You Pay:
+                    %dd 
+                      $
+                      =offer.price 
+                    %dt Value
+                    %dd 
+                      $
+                      =offer.value 
           #buydeal
             %button 
               buy now!
