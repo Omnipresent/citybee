@@ -12,14 +12,12 @@
       .nest
         .hgroup
           %h1
-            %a.ir.citybee-logo CityBee
+            %a.ir.citybee-logo{:href=>"/dailydeal"} CityBee
         #new-badge
           - if current_user
             %ul.auth
               %a{:href=>"/deals/new"} Add new deal
               |
-              %a{:href=>"#"} Logged in 
-              | 
               %a{:href=>"/logout"} Logout
           - else
             %ul.unauth
