@@ -16,8 +16,10 @@
         #new-badge
           - if current_user
             %ul.auth
-              %a{:href=>"#"} Logged in 
+              %a{:href=>"/deals/new"} Add new deal
               |
+              %a{:href=>"#"} Logged in 
+              | 
               %a{:href=>"/logout"} Logout
           - else
             %ul.unauth
@@ -28,4 +30,4 @@
       .notice.border-radius
         #msg
           = flash.notice
-    = yield
+    =yield

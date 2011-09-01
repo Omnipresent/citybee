@@ -559,6 +559,72 @@ body.two-col #content {
 }
 
 /* line 17, ../../app/stylesheets/screen.scss */
+#userOptions {
+  height: 24px;
+  margin-left: 200px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+/* line 23, ../../app/stylesheets/screen.scss */
+#userOptions li {
+  float: right;
+  position: relative;
+}
+/* line 26, ../../app/stylesheets/screen.scss */
+#userOptions li .btn {
+  margin: 1px 1px 0 2px;
+}
+/* line 29, ../../app/stylesheets/screen.scss */
+#userOptions button #option {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  padding-right: 9px;
+}
+/* line 32, ../../app/stylesheets/screen.scss */
+#userOptions button #option span {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  line-height: 11px;
+  margin: 0;
+  padding: 5px 0 6px 10px;
+}
+/* line 42, ../../app/stylesheets/screen.scss */
+#userOptions .btn_style1 {
+  background-color: #444444;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 53, ../../app/stylesheets/screen.scss */
+#userOptions li.first .btn {
+  margin-right: 0;
+}
+
+/* line 56, ../../app/stylesheets/screen.scss */
+.right {
+  float: right !important;
+}
+
+/* line 60, ../../app/stylesheets/screen.scss */
 #new-deals {
   display: inline;
   float: left;
@@ -570,14 +636,14 @@ body.two-col #content {
 * html #new-deals {
   overflow-x: hidden;
 }
-/* line 20, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 #new-deals h2 {
   font-size: 22px;
   font-weight: bold;
   text-align: left;
 }
 
-/* line 31, ../../app/stylesheets/screen.scss */
+/* line 74, ../../app/stylesheets/screen.scss */
 #deal-desc {
   display: inline;
   float: left;
@@ -593,7 +659,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 39, ../../app/stylesheets/screen.scss */
+/* line 82, ../../app/stylesheets/screen.scss */
 ul.deal-stats {
   display: inline;
   float: left;
@@ -606,24 +672,24 @@ ul.deal-stats {
 * html ul.deal-stats {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 ul.deal-stats .value, ul.deal-stats .label {
   top: 0;
   left: 0;
   width: 100%;
   position: absolute;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 ul.deal-stats .label {
   color: #58595B;
   font-weight: normal;
   top: 20px;
 }
-/* line 54, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/stylesheets/screen.scss */
 ul.deal-stats .deal-on {
   float: left;
 }
-/* line 57, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 ul.deal-stats li {
   height: 51px;
   float: left;
@@ -635,17 +701,17 @@ ul.deal-stats li {
   position: relative;
   color: #58595B;
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 ul.deal-stats li.last {
   border: medium none;
 }
 
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 115, ../../app/stylesheets/screen.scss */
 #deal-title {
   margin-bottom: 10px;
   text-align: left;
 }
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 118, ../../app/stylesheets/screen.scss */
 #deal-title h1 {
   font-size: 30px;
   font-weight: bold;
@@ -653,18 +719,18 @@ ul.deal-stats li.last {
   margin-bottom: 5px;
 }
 
-/* line 82, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 .verticalLine {
   border-left: thick solid #DDDDDD;
 }
 
-/* line 85, ../../app/stylesheets/screen.scss */
+/* line 128, ../../app/stylesheets/screen.scss */
 .horizontalLine {
   margin-top: 5px;
   border-top: thick solid #DDDDDD;
 }
 
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 133, ../../app/stylesheets/screen.scss */
 #bounty {
   display: inline;
   float: left;
@@ -675,7 +741,7 @@ ul.deal-stats li.last {
 * html #bounty {
   overflow-x: hidden;
 }
-/* line 92, ../../app/stylesheets/screen.scss */
+/* line 135, ../../app/stylesheets/screen.scss */
 #bounty #buydeal {
   display: inline;
   float: left;
@@ -688,7 +754,7 @@ ul.deal-stats li.last {
 * html #bounty #buydeal {
   overflow-x: hidden;
 }
-/* line 96, ../../app/stylesheets/screen.scss */
+/* line 139, ../../app/stylesheets/screen.scss */
 #bounty #buydeal button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -761,14 +827,14 @@ ul.deal-stats li.last {
 #bounty #buydeal button:active, #bounty #buydeal button:active:visited {
   color: white;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 #bounty #buydeal a {
   background: url("http://a1.ak.lscdn.net/deals/images/bingy/gifting/gift-sm.png") no-repeat scroll left top transparent;
   display: block;
   margin-left: 10px;
   padding: 5px 0 5px 30px;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 #bounty #offers {
   float: right;
   display: inline;
@@ -781,7 +847,7 @@ ul.deal-stats li.last {
 * html #bounty #offers {
   overflow-x: hidden;
 }
-/* line 111, ../../app/stylesheets/screen.scss */
+/* line 154, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals {
   display: inline;
   float: left;
@@ -793,39 +859,39 @@ ul.deal-stats li.last {
 * html #bounty #offers #deals {
   overflow-x: hidden;
 }
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 157, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals dl, #bounty #offers #deals dt, #bounty #offers #deals dd {
   display: inline;
   font-size: 12px;
   font-weight: bold;
   color: #58595B;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 163, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals dd {
   color: green;
 }
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 166, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals dt {
   margin-right: 2px;
 }
-/* line 124, ../../app/stylesheets/screen.scss */
+/* line 167, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals h3 {
   color: #58595B;
   font-size: 19px;
   font-weight: bold;
   line-height: 25px;
 }
-/* line 130, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 #bounty #offers #deals dl {
   float: left;
 }
 
-/* line 137, ../../app/stylesheets/screen.scss */
+/* line 180, ../../app/stylesheets/screen.scss */
 #multiple-offers {
   margin-left: 15px;
 }
 
-/* line 140, ../../app/stylesheets/screen.scss */
+/* line 183, ../../app/stylesheets/screen.scss */
 .notice.border-radius {
   width: 750px;
   margin: 0 auto;
@@ -838,45 +904,45 @@ ul.deal-stats li.last {
   font-weight: bold;
   background-color: #FFFFFF;
 }
-/* line 148, ../../app/stylesheets/screen.scss */
+/* line 191, ../../app/stylesheets/screen.scss */
 .notice.border-radius #msg {
   margin-left: 10px;
 }
 
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
 .alert {
   color: red;
 }
 
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 199, ../../app/stylesheets/screen.scss */
 .clearfix {
   display: block;
 }
 
-/* line 157, ../../app/stylesheets/screen.scss */
+/* line 200, ../../app/stylesheets/screen.scss */
 ul {
   list-style: disc outside none;
   margin: 0;
   padding: 0;
 }
 
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 205, ../../app/stylesheets/screen.scss */
 ul li {
   list-style: none outside none;
 }
 
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 208, ../../app/stylesheets/screen.scss */
 li.space {
   margin-left: 30px;
 }
 
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 209, ../../app/stylesheets/screen.scss */
 form {
   text-align: left;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-/* line 170, ../../app/stylesheets/screen.scss */
+/* line 213, ../../app/stylesheets/screen.scss */
 form button {
   float: right;
   -moz-border-radius: 6px;
@@ -949,7 +1015,7 @@ form button:active {
 form button:active, form button:active:visited {
   color: white;
 }
-/* line 174, ../../app/stylesheets/screen.scss */
+/* line 217, ../../app/stylesheets/screen.scss */
 form h4 {
   font-size: 16px;
   font-weight: normal;
@@ -957,7 +1023,7 @@ form h4 {
   margin-bottom: 20px;
   margin-left: 30px;
 }
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 225, ../../app/stylesheets/screen.scss */
 form ul li.label {
   float: left;
   margin-bottom: 5px;
@@ -968,26 +1034,26 @@ form ul li.label {
   font-size: 16px;
   margin-left: 10px;
 }
-/* line 192, ../../app/stylesheets/screen.scss */
+/* line 235, ../../app/stylesheets/screen.scss */
 form ul li.field {
   float: left;
   margin-bottom: 5px;
   width: 280px;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 239, ../../app/stylesheets/screen.scss */
 form ul li.field input {
   width: 280px;
   font-size: 18px;
 }
 
-/* line 203, ../../app/stylesheets/screen.scss */
+/* line 246, ../../app/stylesheets/screen.scss */
 #two-col {
   width: 750px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 248, ../../app/stylesheets/screen.scss */
 #two-col #right {
   display: inline;
   float: left;
@@ -1000,7 +1066,7 @@ form ul li.field input {
 * html #two-col #right {
   overflow-x: hidden;
 }
-/* line 210, ../../app/stylesheets/screen.scss */
+/* line 253, ../../app/stylesheets/screen.scss */
 #two-col #left {
   display: inline;
   float: left;
@@ -1011,15 +1077,15 @@ form ul li.field input {
 * html #two-col #left {
   overflow-x: hidden;
 }
-/* line 212, ../../app/stylesheets/screen.scss */
+/* line 255, ../../app/stylesheets/screen.scss */
 #two-col #left ul {
   margin-top: 15px;
 }
-/* line 214, ../../app/stylesheets/screen.scss */
+/* line 257, ../../app/stylesheets/screen.scss */
 #two-col #left ul li {
   padding-bottom: 25px;
 }
-/* line 219, ../../app/stylesheets/screen.scss */
+/* line 262, ../../app/stylesheets/screen.scss */
 #two-col #bottom {
   display: inline;
   float: left;
@@ -1031,7 +1097,7 @@ form ul li.field input {
 * html #two-col #bottom {
   overflow-x: hidden;
 }
-/* line 222, ../../app/stylesheets/screen.scss */
+/* line 265, ../../app/stylesheets/screen.scss */
 #two-col #bottom h2 {
   font-size: 22px;
   font-weight: normal;
@@ -1039,7 +1105,7 @@ form ul li.field input {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 229, ../../app/stylesheets/screen.scss */
+/* line 272, ../../app/stylesheets/screen.scss */
 #two-col #bottom #fine-print {
   display: inline;
   float: left;
@@ -1053,12 +1119,12 @@ form ul li.field input {
 * html #two-col #bottom #fine-print {
   overflow-x: hidden;
 }
-/* line 234, ../../app/stylesheets/screen.scss */
+/* line 277, ../../app/stylesheets/screen.scss */
 #two-col #bottom #fine-print p {
   font-size: 12px;
   padding-right: 20px;
 }
-/* line 239, ../../app/stylesheets/screen.scss */
+/* line 282, ../../app/stylesheets/screen.scss */
 #two-col #bottom #locations {
   display: inline;
   float: left;
@@ -1069,7 +1135,7 @@ form ul li.field input {
 * html #two-col #bottom #locations {
   overflow-x: hidden;
 }
-/* line 242, ../../app/stylesheets/screen.scss */
+/* line 285, ../../app/stylesheets/screen.scss */
 #two-col #bottom #locations ul.address li {
   color: #676767;
   margin-bottom: 10px;
@@ -1077,12 +1143,12 @@ form ul li.field input {
   text-align: left;
 }
 
-/* line 253, ../../app/stylesheets/screen.scss */
+/* line 296, ../../app/stylesheets/screen.scss */
 .deal-image {
   height: 400px;
 }
 
-/* line 257, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 .or-separator {
   clear: both;
   height: 23px;
@@ -1097,7 +1163,7 @@ form ul li.field input {
   text-align: center;
 }
 
-/* line 270, ../../app/stylesheets/screen.scss */
+/* line 313, ../../app/stylesheets/screen.scss */
 #login-outer {
   display: inline;
   float: left;
@@ -1110,27 +1176,27 @@ form ul li.field input {
 * html #login-outer {
   overflow-x: hidden;
 }
-/* line 274, ../../app/stylesheets/screen.scss */
+/* line 317, ../../app/stylesheets/screen.scss */
 #login-outer ul.row {
   margin-top: 35px;
 }
-/* line 276, ../../app/stylesheets/screen.scss */
+/* line 319, ../../app/stylesheets/screen.scss */
 #login-outer ul.row li {
   float: left;
   margin-right: 20px;
 }
-/* line 281, ../../app/stylesheets/screen.scss */
+/* line 324, ../../app/stylesheets/screen.scss */
 #login-outer h2 {
   text-align: left;
 }
-/* line 284, ../../app/stylesheets/screen.scss */
+/* line 327, ../../app/stylesheets/screen.scss */
 #login-outer #social-login {
   height: 280px;
   margin-top: 15px;
   margin-bottom: 20px;
   background-color: #F1F1F1;
 }
-/* line 289, ../../app/stylesheets/screen.scss */
+/* line 332, ../../app/stylesheets/screen.scss */
 #login-outer #social-login h2 {
   text-align: left;
   margin-left: 30px;
@@ -1139,23 +1205,23 @@ form ul li.field input {
   font-weight: normal;
 }
 
-/* line 298, ../../app/stylesheets/screen.scss */
+/* line 341, ../../app/stylesheets/screen.scss */
 .login-form-height {
   height: 180px;
 }
 
-/* line 301, ../../app/stylesheets/screen.scss */
+/* line 344, ../../app/stylesheets/screen.scss */
 .signup-form-height {
   height: 280px;
 }
 
-/* line 304, ../../app/stylesheets/screen.scss */
+/* line 347, ../../app/stylesheets/screen.scss */
 #login {
   margin-top: 15px;
   margin-bottom: 20px;
   background-color: #F1F1F1;
 }
-/* line 308, ../../app/stylesheets/screen.scss */
+/* line 351, ../../app/stylesheets/screen.scss */
 #login h2 {
   text-align: left;
   margin-left: 30px;
@@ -1164,12 +1230,12 @@ form ul li.field input {
   font-weight: normal;
 }
 
-/* line 316, ../../app/stylesheets/screen.scss */
+/* line 359, ../../app/stylesheets/screen.scss */
 .login-height {
   min-height: 450px;
 }
 
-/* line 320, ../../app/stylesheets/screen.scss */
+/* line 363, ../../app/stylesheets/screen.scss */
 #signup-page {
   width: 750px;
   margin: 0 auto;
@@ -1183,12 +1249,12 @@ form ul li.field input {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 324, ../../app/stylesheets/screen.scss */
+/* line 367, ../../app/stylesheets/screen.scss */
 #signup-page #signup-content {
   margin: 5px 0;
   padding: 10px;
 }
-/* line 328, ../../app/stylesheets/screen.scss */
+/* line 371, ../../app/stylesheets/screen.scss */
 #signup-page h1 {
   background-color: #59deff;
   margin-bottom: 10px;
@@ -1206,7 +1272,7 @@ form ul li.field input {
   font-weight: bold;
   padding-left: 5%;
 }
-/* line 340, ../../app/stylesheets/screen.scss */
+/* line 383, ../../app/stylesheets/screen.scss */
 #signup-page #signup-section-form {
   background: none repeat scroll 0 0 #EEEEEE;
   -moz-border-radius: 5px;
@@ -1216,7 +1282,7 @@ form ul li.field input {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 343, ../../app/stylesheets/screen.scss */
+/* line 386, ../../app/stylesheets/screen.scss */
 #signup-page #signup-section-form li.form_floated_half {
   margin-right: 20px;
   width: 265px;
@@ -1226,7 +1292,7 @@ form ul li.field input {
   margin: 0 2px 15px 0;
 }
 
-/* line 359, ../../app/stylesheets/screen.scss */
+/* line 402, ../../app/stylesheets/screen.scss */
 #big-box {
   width: 750px;
   margin: 0 auto;
@@ -1235,21 +1301,21 @@ form ul li.field input {
   background-color: #FFFFFF;
   margin-top: 15px;
 }
-/* line 363, ../../app/stylesheets/screen.scss */
+/* line 406, ../../app/stylesheets/screen.scss */
 #big-box table {
   padding: 10px;
 }
-/* line 365, ../../app/stylesheets/screen.scss */
+/* line 408, ../../app/stylesheets/screen.scss */
 #big-box table tr th {
   font-weight: bold;
   width: 180px;
 }
-/* line 369, ../../app/stylesheets/screen.scss */
+/* line 412, ../../app/stylesheets/screen.scss */
 #big-box table tr {
   margin-top: 10px;
   padding-bottom: 10px;
 }
-/* line 374, ../../app/stylesheets/screen.scss */
+/* line 417, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals {
   display: inline;
   float: left;
@@ -1260,7 +1326,7 @@ form ul li.field input {
 * html #big-box ul.otherdeals {
   overflow-x: hidden;
 }
-/* line 376, ../../app/stylesheets/screen.scss */
+/* line 419, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals li {
   display: inline;
   float: left;
@@ -1274,18 +1340,18 @@ form ul li.field input {
 * html #big-box ul.otherdeals li {
   overflow-x: hidden;
 }
-/* line 382, ../../app/stylesheets/screen.scss */
+/* line 425, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals #img {
   left: 0;
   position: absolute;
   top: 0;
 }
-/* line 389, ../../app/stylesheets/screen.scss */
+/* line 432, ../../app/stylesheets/screen.scss */
 #big-box #header {
   background-color: #59deff;
   padding-top: 6px;
 }
-/* line 392, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 #big-box #header h1 {
   font-size: 26px;
   text-align: left;
@@ -1293,27 +1359,27 @@ form ul li.field input {
   font-weight: normal;
   padding: 0 20px 5px;
 }
-/* line 398, ../../app/stylesheets/screen.scss */
+/* line 441, ../../app/stylesheets/screen.scss */
 #big-box #header h1 span {
   font-size: 18px;
 }
-/* line 401, ../../app/stylesheets/screen.scss */
+/* line 444, ../../app/stylesheets/screen.scss */
 #big-box #header h1 a {
   font-size: 20px;
 }
 
-/* line 407, ../../app/stylesheets/screen.scss */
+/* line 450, ../../app/stylesheets/screen.scss */
 a {
   text-decoration: none;
   color: #0066cc;
 }
 
-/* line 411, ../../app/stylesheets/screen.scss */
+/* line 454, ../../app/stylesheets/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 414, ../../app/stylesheets/screen.scss */
+/* line 457, ../../app/stylesheets/screen.scss */
 .border-radius {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -1323,7 +1389,7 @@ a:hover {
   border-radius: 7px;
 }
 
-/* line 417, ../../app/stylesheets/screen.scss */
+/* line 460, ../../app/stylesheets/screen.scss */
 body {
   text-align: center;
   color: #262626;
@@ -1334,13 +1400,13 @@ body {
   background-size: cover;
 }
 
-/* line 427, ../../app/stylesheets/screen.scss */
+/* line 470, ../../app/stylesheets/screen.scss */
 #background {
   height: 100%;
   width: 100%;
   position: fixed;
 }
-/* line 431, ../../app/stylesheets/screen.scss */
+/* line 474, ../../app/stylesheets/screen.scss */
 #background img {
   width: 100%;
   height: 100%;
@@ -1349,24 +1415,24 @@ body {
   z-index: -1;
 }
 
-/* line 440, ../../app/stylesheets/screen.scss */
+/* line 483, ../../app/stylesheets/screen.scss */
 #masthead {
   background-color: #262626;
   height: 85px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 445, ../../app/stylesheets/screen.scss */
+/* line 488, ../../app/stylesheets/screen.scss */
 #masthead .hgroup {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
 }
-/* line 450, ../../app/stylesheets/screen.scss */
+/* line 493, ../../app/stylesheets/screen.scss */
 #masthead h1 {
   margin: 0;
 }
-/* line 452, ../../app/stylesheets/screen.scss */
+/* line 495, ../../app/stylesheets/screen.scss */
 #masthead h1 a {
   background: url("/images/logo.png");
   height: 80px;
@@ -1374,7 +1440,7 @@ body {
   width: 175px;
 }
 
-/* line 461, ../../app/stylesheets/screen.scss */
+/* line 504, ../../app/stylesheets/screen.scss */
 .nest {
   background: none repeat scroll 0 0 transparent;
   margin: 0 auto;
@@ -1384,7 +1450,7 @@ body {
   z-index: 1000;
 }
 
-/* line 470, ../../app/stylesheets/screen.scss */
+/* line 513, ../../app/stylesheets/screen.scss */
 .ir {
   background-repeat: no-repeat;
   direction: ltr;
@@ -1394,7 +1460,7 @@ body {
   text-indent: -999em;
 }
 
-/* line 480, ../../app/stylesheets/screen.scss */
+/* line 523, ../../app/stylesheets/screen.scss */
 #new-badge {
   color: #8A8A8A;
   font-weight: normal;
@@ -1405,18 +1471,18 @@ body {
   right: 10px;
   top: 12px;
 }
-/* line 490, ../../app/stylesheets/screen.scss */
+/* line 533, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth, #new-badge ul.auth {
   margin-top: 10px;
   padding-top: 14px;
   text-align: center;
 }
-/* line 494, ../../app/stylesheets/screen.scss */
+/* line 537, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth a, #new-badge ul.auth a {
   color: #66C3FE;
 }
 
-/* line 499, ../../app/stylesheets/screen.scss */
+/* line 542, ../../app/stylesheets/screen.scss */
 .border-radius-example {
   width: 125px;
   height: 125px;
