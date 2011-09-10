@@ -157,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby
   compass (>= 0.11.5)
+  daemons (= 1.0.10)
   devise
   fancy-buttons
   haml (= 3.1)
