@@ -192,7 +192,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   config.omniauth :facebook, "245438348826196", "bdd55ee2017c67b26bc37a7ab36045f6",
-      {:client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}}
+       {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
   config.omniauth :open_id, OpenID::Store::Filesystem.new('./tmp')
   config.omniauth :open_id, OpenID::Store::Filesystem.new('./tmp'), :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id'
   # ==> Warden configuration
