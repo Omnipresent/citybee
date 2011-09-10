@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
-gem 'daemons', '1.0.10'
+#gem 'daemons', '1.1.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -15,7 +15,7 @@ gem "jquery-rails"
 gem "devise"
 gem "omniauth"
 gem 'oa-openid', :require => 'omniauth/openid'
-gem 'mongrel', '1.2.0.pre2'
+#gem 'mongrel', '>= 1.2.0.pre2'
 # Use unicorn as the web server
 # gem 'unicorn'
 
