@@ -14,6 +14,124 @@
 @import "partials/two_col";
 @import "compass/css3";
 
+
+#command-center{
+  @include container;
+  padding: 8px;
+  background: none repeat scroll 0 0 #F0F0F0;
+  min-height: 500px;
+  margin-top: 15px;
+  color: #434D51;
+  ul#header {
+    background: none repeat scroll 0 0 #FFFFFF;
+    @include border-top-left-radius(10px);
+    @include border-top-right-radius(10px);
+    padding: 9px 0 0;
+    @include column(12);
+    text-align: left;
+    margin-bottom: 15px;
+    li.nav {
+      display: inline;
+      font-size: 26px;
+      height: 30px;
+      margin: 0 5px 0 0;
+      padding: 10px;
+      a {
+        color: #BFC2C4;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+    li.active {
+      a {color: #434D51;}
+    }
+  }
+#vouchers{ 
+    @include column(12);
+    background: none repeat scroll 0 0 #FFFFFF;
+    @include border-top-left-radius(10px);
+    @include border-top-right-radius(10px);
+    padding: 9px 0 0;
+    min-height: 200px;
+    h2 {
+      border-bottom: 1px solid #E1E0DE;
+      text-align: left;
+      @include prepend(.5);
+      font-size: 22px;
+      font-weight: normal;
+    }
+    ul#voucher {
+      @include column(11.6);
+      padding: 10px;
+      li#voucher {
+        background: none repeat scroll 0 0 #F0F0F0;
+        display: block;
+        @include border-radius(10px);
+        margin-bottom: 15px;
+        clear: both;
+        position: relative;
+        overflow: hidden;
+        img.thumb {
+          background: none repeat scroll 0 0 #FFFFFF;
+          border: 1px solid #CCCCCC;
+          float: left;
+          height: 108px;
+          margin: 8px;
+          padding: 1px;
+          width: 70px;
+        }
+        #left {
+          float: left;
+          margin-top: 8px;
+          margin-left: 10px;
+          margin-bottom: 10px;
+          width: 425px;
+          text-align: left;
+          #information {
+            p.expiration {
+              background: none repeat scroll 0 0 lighten(#FFFF66, 10%);
+              @include border-radius(4px);
+              margin-bottom: 5px;
+              color: #434D51;
+              font-weight: bold;
+              padding: 5px;
+              width: 120px;
+            }
+            p {
+              color: darken(#f0f0f0, 40%);
+            }
+          }
+          #title {
+            text-align: left;
+            min-height: 60px;
+            a{
+              text-decoration : none;
+              color: #434D51;
+              font-weight: bold;
+              margin-bottom: 10px;
+              font-size: 17px;
+            }
+            p {color: darken(#f0f0f0, 40%);}
+            p {
+            }
+          }
+        }
+        #right {
+          float: left;
+          width: 200px;
+          background: none repeat scroll 0 0 darken(#f0f0f0, 60%);
+          color: #F0f0f0;
+          text-align: left;
+          #printcoupon
+          {
+            @include background-image(linear-gradient(center top, white, #dddddd));
+            @include border-radius(5px); padding: 4px; }
+        }
+      }
+    }
+  }
+}
+
 #userOptions {
   height: 24px;
   margin-left: 200px;
@@ -129,22 +247,18 @@ ul.deal-stats {
   margin-top: 5px;
   border-top: thick solid #DDDDDD;
 }
+
+.tip {
+  margin-top: 5px;
+}
 #bounty
 {
   @include column (7);
-  #buydeal {
-      @include column(2.5);
-      margin-top: 18px;
-      margin-left: 25px;
+  #buywrap {
+    @include column(2.5);
     button {
       @include fancy-button(#33CC33, 22px);
       margin-bottom: 5px;
-    }
-    a {
-      background: url("http://a1.ak.lscdn.net/deals/images/bingy/gifting/gift-sm.png") no-repeat scroll left top transparent;
-      display: block;
-      margin-left: 10px;
-      padding: 5px 0 5px 30px; 
     }
   }
   #offers {
@@ -154,24 +268,11 @@ ul.deal-stats {
     #deals{
       @include column (3.5);
       text-align: left;
-      dl, dt, dd {
-        display: inline;
-        font-size: 12px;
-        font-weight: bold;
-        color: #58595B;
-      }
-      dd { 
-        color: green;
-      }
-      dt { margin-right: 2px;}
       h3{
         color: #58595B;
         font-size: 19px;
         font-weight: bold;
         line-height: 25px;
-      }
-      dl{
-        float: left;
       }
     }
   }
@@ -209,7 +310,6 @@ li.space {margin-left: 30px}
 form {
   text-align: left;
   padding-bottom: 20px;
-  padding-top: 20px;
   button {
     float: right;
     @include fancy-button(#33CC33);
@@ -342,12 +442,47 @@ height: 400px;
   height: 180px;
 }
 .signup-form-height {
-  height: 280px;
+  height: 230px;
+}
+
+.rememberme {
+float: left;
+margin-left: 10px;       
+}
+.remembermelabel {
+float: left;
+margin-left: 10px;       
+}
+#error_explanation {
+  @include border-radius(10px);
+  background: none repeat scroll 0 0 #FFE1E1;
+  color: #9B2E2E;
+  font-size: 13px;
+  margin: 10px 0 ;
+  position: relative;
+  text-align: left;
+  padding: 5px;
+  h2 {
+    font: 14px;
+    font-weight: bold;
+  }
+  ul {
+    padding-left: 10px;
+    padding-top: 5px;
+    color: #9B2E2E;
+    li {
+      line-height: 14px;
+      padding-left: 5px;
+    }
+  }
+  
+
 }
 #login{
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #F1F1F1;
+    padding-top: 20px;
     h2 {
       text-align: left;
       margin-left: 30px;
@@ -398,11 +533,27 @@ ul.fields {
   
 
 }
-
 #big-box {
   @include container;
   background-color: #FFFFFF;
   margin-top: 15px;
+  #footer {
+    background-color: #333333;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    #linkbar {
+color: red;
+      ul{
+        text-align: left;
+        li {
+          a {
+            color: #59DEFF;
+          }
+        }
+      }
+    }
+  }
   table {
     padding: 10px;
     tr th {
@@ -412,6 +563,84 @@ ul.fields {
     tr  {
       margin-top: 10px;
       padding-bottom: 10px;
+    }
+  }
+  dl, dt, dd {
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    color: #58595B;
+  }
+  dd { 
+    color: green;
+  }
+  dt { margin-right: 2px;}
+  dl{
+    float: left;
+  }
+  #otherdeals {
+    #related {
+      @include column(11);
+      @include prepend(.5);
+      @include append(.5);
+      background-color: #EDEDED;
+    }
+    .deal-item{
+      margin-bottom: 15px;
+      position: relative;
+      width: 209px;
+      margin-top: 10px;
+    }
+    #inside {
+      background-color: #FFFFFF;
+      color: white;
+      height: 255px;
+      @include box-shadow(#CCCCCC 0 1px 6px);
+      padding: 10px;
+      .view-image {
+        height: 185px;
+        overflow: hidden;
+        width: 189px;
+        margin-right: 10px;
+        img {max-width: 189px;}
+      }
+      .deal-title
+      {
+        h2 {
+          height: auto;
+          line-height: 1.3em;
+          margin: 5px 0 0.2em;
+          font-weight: 600;
+          font-size: 1.2em;
+          margin-top: 3px;
+          text-align: left;
+          a {
+            text-decoration: none;
+            color: #F36C21;
+          }
+          a:hover, a:focus {
+            color: #F68C51;
+          }
+        }
+      }
+      .bottom {
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+          
+
+    .col {
+      display:block;
+      float: left;
+    }
+    .middle {
+      border-left: 1px dotted #CCCCCC;
+      border-right: 1px dotted #CCCCCC;
+      margin: 10px 15px 15px;
+      padding: 0 14px;
     }
   }
   ul.otherdeals {
@@ -462,7 +691,7 @@ body  {
   color: $base-color;
   font-family: helvetica;
   font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
-  background: #000 url("/images/Sketch2.jpg") center top fixed no-repeat;
+  background: #000 url("/images/beemoved.png") center top fixed no-repeat;
   -moz-background-size: cover;
   background-size: cover;
 }
@@ -534,7 +763,13 @@ body  {
     margin-top: 10px;
     padding-top: 14px;
     text-align: center;
-    a {color: #66C3FE;}
+    li {
+      border-left: 1px solid #DDDDDD;
+      float: left;
+      padding: 0 8px;
+      a {color: #66C3FE;}
+    }
+    .first {border: none;}
   }
 
 }

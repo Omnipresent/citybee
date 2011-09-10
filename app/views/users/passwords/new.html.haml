@@ -1,0 +1,20 @@
+#big-box.border-radius.login-height
+  #header
+    %h1 
+      Reset Password
+
+  #login-outer.border-radius
+    = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| 
+      = devise_error_messages!
+      #login.login-form-height.border-radius
+        %ul.clearfix
+          %li.label
+            = f.label :email
+          %li.field
+            = f.email_field :email
+          %li.field
+          %li.label
+          %li.label
+          %li.field
+            %button
+              Request Password

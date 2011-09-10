@@ -1,20 +1,22 @@
 Citybee::Application.routes.draw do
 
 
-  resources :somes
-
-  get "sessions/new"
-
-  get "users/new"
-  get "login" => "sessions#new", :as => "login"
-  get "logout" => "sessions#destroy", :as => "logout"
-  get "signup" => "users#new", :as=>"signup"
   root  :to => "deals#show"
-  resources :users
-  resources :sessions
+  devise_for :users
+#resources :sessions
   resources :deals
 
+
+#get "login" => "sessions#new", :as => "login"
+# get "logout" => "sessions#destroy", :as => "logout"
+# get "signup" => "users#new", :as=>"signup"
+# resources :users
+  
+  match "/home/myaccount" => "account#index"
+  match "/home/markasused/:id/used=:used" => "deals#markasused"
   match "/dailydeal" => "deals#show"
+  match "/download" => "users#download"
+  match "/sting=:id" => "users#influenced"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

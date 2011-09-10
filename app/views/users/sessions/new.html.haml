@@ -1,0 +1,37 @@
+#big-box.border-radius.login-height
+  #header
+    %h1 
+      log in 
+      %span 
+        or
+        = link_to "sign up", new_user_registration_path
+  #login-outer.border-radius
+    %h2
+    %ul.row
+      %li
+        = link_to image_tag("/images/fb-login-button.png"), user_omniauth_authorize_path(:facebook)
+  %h3.or-separator
+    or
+  #login-outer.border-radius
+    #login.login-form-height.border-radius
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        %ul.clearfix
+          %li.label
+            = f.label :email
+          %li.field
+            = f.email_field :email
+        %ul.clearfix
+          %li.label
+            = f.label :password
+          %li.field
+            = f.password_field :password
+            = link_to "Forgot Password", new_user_password_path
+        %ul.clearfix
+          %li.label
+          %li.field.rememberme
+            = f.check_box :remember_me, {:class => "remembermelabel"}
+            %p.rememberme Remember me
+          %li.label
+          %li.field
+            %button
+              %span Login

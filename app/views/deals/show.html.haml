@@ -12,7 +12,7 @@
           #offers
             - @deal.offers.each_with_index do |offer, index|
               - if index == 0
-                #deals
+                #deals.horizontalLineBottom
                   %h3 
                     = offer.title 
                   %dl
@@ -37,18 +37,21 @@
                     %dd 
                       $
                       =offer.value 
-          #buydeal
-            %button 
-              buy now!
-            %a{:href=>"#"} send as a gift
+          #buywrap
+            = form_tag "/download" do
+              = hidden_field_tag(:deal_id, @deal.id)
+              = hidden_field_tag(:offer_id, @deal.offers.first.id)
+              %button 
+                Get it!
         %ul.deal-stats
           %li 
-            .value
-              %img{:style=>"",:src=>"http://assets1.grouponcdn.com/images/groupon/icons/tipometer/check_mark.png"}
-            .label deal is on
+            .value.tip
+              %a{:href=>"#"} tip this deal
+              /%img{:style=>"",:src=>"http://assets1.grouponcdn.com/images/groupon/icons/tipometer/check_mark.png"}
+            .label 
           %li 
             .value 500
-            .label purchased
+            .label grabbed
           %li.last
             .value 
               = time_diff_in_natural_language(Time.now, @deal.end_at)
@@ -56,7 +59,7 @@
       #deal-desc.clearfix
         =@deal.summary
     #left
-      .deal-image{:style=>"background: url('http://a5.ak.lscdn.net/imgs/70c97b4b-819f-4b06-8e6b-c5c362c96d1c/280_q60_.jpg') no-repeat scroll left top #EFEFEF"}
+      .deal-image{:style=>"background: url('/images/#{@deal.image_name}') no-repeat scroll left top #EFEFEF"}
     #bottom 
       #fine-print
         %h2 the fine print
@@ -87,15 +90,26 @@
   #header
     %h1
       other deals
-  %ul.otherdeals
-    - for deal in @deals
-      %li
-        %a{:href=>"#{deal.id}"} 
-          =deal.title
-        %p 
-          $
-          =deal.offers.first.price if deal.offers.size > 0
-          -
-          =deal.offers.first.title if deal.offers.size > 0
-        %p 
-          =deal.locations.first.city if deal.locations.size > 0
+  #otherdeals
+    #related
+      - for deal in @deals
+        - @class= cycle("", "middle")
+        .deal-item.col{:class => (@class)}
+          #inside.border-radius
+            .view-image
+              %a{:href=>"/deals/#{deal.id}"}
+                %img{:src=>"/images/#{deal.image_name}", :width=>"190px", :height=>"200px"}
+            .deal-title
+              %h2
+                %a{:href=>"/deals/#{deal.id}"}
+                  =deal.title
+              %p.deal
+              %dl
+                %dt You Pay:
+                %dd 
+                  $
+                  =deal.offers.first.price 
+                %dt Value
+                %dd 
+                  $
+                  =deal.offers.first.value

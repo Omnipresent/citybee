@@ -1,0 +1,63 @@
+
+
+#command-center.border-radius 
+  %ul#header
+    %li.nav.active
+      %a vouchers
+    %li.nav
+      %a history
+    %li.nav
+      %a favorites
+    %li.nav
+      %a account
+  #vouchers
+    %h2 Vouchers
+    - for offer in @user.offers
+      - @deal = offer.deal
+      - @download = @user.downloads.where("offer_id = ?", offer.id).first
+      - @coupon_code = Coupon.find(@download.coupon_id).coupon_code
+      %ul#voucher
+        %li#voucher
+          %img.thumb{:alt=>"test", :src=>"https://a248.e.akamai.net/si.lscdn.net/imgs/486499a6-10ae-4483-83ca-085ad509f6bd/image_size_q60_.jpg"}
+          #left
+            #title
+              %a{:href=>"something"}
+                = @deal.title
+              %p 
+                = offer.title
+            #information
+              - if @download.marked_used != nil
+                %p.expiration
+                  Marked as used
+                  =time_ago_in_words(@download.marked_used)
+                  ago
+              - else
+                - if @deal.expiration_date != nil and @deal.expiration_date > Date.today
+                  %p.expiration 
+                    Coupon expires in
+                    =time_diff_in_natural_language(Time.now, @deal.expiration_date) 
+                - elsif @deal.expiration_date != nil and @deal.expiration_date < Date.today
+                  %p.expiration
+                    Coupon expired 
+                    =time_diff_in_natural_language(Time.now, @deal.expiration_date) 
+                    ago
+                - elsif @deal.expiration_date == Date.today
+                  %p.expiration
+                    Coupon expires today! Go avail it!
+              %p
+                grabbed on:
+                = @download.created_at.to_date
+              %p 
+                coupon code:
+                = @coupon_code
+          #right
+            #printcoupon
+              %a{:href=>"#"}
+                print this
+            #printcoupon
+              - if @download.marked_used != nil
+                %a{:href=>"/home/markasused/#{offer.id}/used=unused"}
+                  Mark as unused
+              - else
+                %a{:href=>"/home/markasused/#{offer.id}/used=used"}
+                  Mark as used

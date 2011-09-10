@@ -1,0 +1,47 @@
+#big-box.border-radius.login-height
+  #header
+    %h1 
+      sign up
+      %span 
+        or
+        = link_to "sign in", new_user_session_path
+  #login-outer.border-radius
+    %h2
+    %ul.row
+      %li
+        %img{:src=>'/images/fb-login-button.png', :href=>"#"}
+  %h3.or-separator
+    or
+  #login-outer.border-radius
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| 
+      = devise_error_messages!
+      #login.signup-form-height.border-radius
+        %ul.clearfix
+          %li.label
+            = f.label "First Name"
+          %li.field
+            = f.text_field :first_name
+        %ul.clearfix
+          %li.label
+            = f.label "Last Name"
+          %li.field
+            = f.text_field :last_name
+        %ul.clearfix
+          %li.label
+            = f.label :email
+          %li.field
+            = f.email_field :email
+        %ul.clearfix
+          %li.label
+            = f.label :password
+          %li.field
+            = f.password_field :password
+        %ul.clearfix
+          %li.label
+            = f.label "Confirm Password"
+          %li.field
+            = f.password_field :password_confirmation
+          %li.label
+          %li.field
+            %button
+              Sign Up

@@ -5,6 +5,24 @@ class DealsController < ApplicationController
     2.times { @deal.locations.build }
   end
 
+  def markasused 
+    user = session[:user]
+    #make sure the passed offer id belongs to logged in user
+    puts params[:id]
+    download_entry = user.downloads.find_by_offer_id(params[:id])
+    if download_entry != nil
+      if params[:used] == "used"
+        download_entry.marked_used = Time.now
+        download_entry.save
+      elsif params[:used] == "unused"
+        download_entry.marked_used = nil
+        download_entry.save
+      end
+    end
+    redirect_to "/home/myaccount"
+  end
+
+
   def create
     @deal = Deal.new(params[:deal])
     if @deal.save
@@ -32,7 +50,13 @@ class DealsController < ApplicationController
   end
 
   def show
-    @deal = Deal.where(:featured_deal => true).order("updated_at desc").first
-    @deals = Deal.all
+    puts session[:sting]
+    if params[:id] == nil
+      @deal = Deal.where(:featured_deal => true).order("updated_at desc").first
+      @deals = Deal.where(:featured_deal => false)
+    else
+      @deal = Deal.find(params[:id])
+      @deals = Deal.where("id <> ?", params[:id])
+    end
   end
 end

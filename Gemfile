@@ -12,6 +12,8 @@ gem 'haml', '3.1'
 gem "nifty-generators", :group=>:development
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "jquery-rails"
+gem "devise"
+gem "omniauth"
 # Use unicorn as the web server
 # gem 'unicorn'
 
