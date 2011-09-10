@@ -2,7 +2,10 @@ Citybee::Application.routes.draw do
 
 
   root  :to => "deals#show"
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_scope :user do 
+    match '/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  end
 #resources :sessions
   resources :deals
 

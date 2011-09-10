@@ -5,11 +5,14 @@
       %span 
         or
         = link_to "sign in", new_user_session_path
+        = link_to "sign in with google", user_omniauth_authorize_path(:google)
   #login-outer.border-radius
     %h2
     %ul.row
       %li
-        %img{:src=>'/images/fb-login-button.png', :href=>"#"}
+        = link_to image_tag("/images/fb-login-button.png"), user_omniauth_authorize_path(:facebook)
+      %li
+        = link_to image_tag("/images/google-login-button.png"), user_omniauth_authorize_path(:facebook)
   %h3.or-separator
     or
   #login-outer.border-radius
