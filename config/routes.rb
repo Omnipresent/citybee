@@ -20,6 +20,7 @@ Citybee::Application.routes.draw do
   match "/dailydeal" => "deals#show"
   match "/download" => "users#download"
   match "/sting=:id" => "users#influenced"
+  match "/whyus" => "extras#whyus"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

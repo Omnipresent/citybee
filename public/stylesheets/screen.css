@@ -59,7 +59,7 @@ a img {
 
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, #bounty #buywrap button, form button {
+.fancy-button-reset-base-class, #bounty #buywrap button, form button, #masthead #promo button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png') repeat-x bottom left;
   margin: 0;
@@ -72,12 +72,12 @@ a img {
   font-weight: bold;
 }
 /* line 165, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, #bounty #buywrap button::-moz-focus-inner, form button::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, #bounty #buywrap button::-moz-focus-inner, form button::-moz-focus-inner, #masthead #promo button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, #bounty #buywrap button:focus, form button:focus {
+.fancy-button-reset-base-class:focus, #bounty #buywrap button:focus, form button:focus, #masthead #promo button:focus {
   outline: none;
 }
 
@@ -1513,6 +1513,138 @@ form ul li.field input {
 }
 
 /* line 536, ../../app/stylesheets/screen.scss */
+#whyus {
+  width: 950px;
+  overflow: hidden;
+  margin: 15px auto 0;
+  background-color: #FFFFFF;
+}
+/* line 542, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus {
+  padding: 20px;
+  min-height: 200px;
+}
+/* line 545, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner {
+  color: #9C446D;
+  padding-top: 10px;
+  text-align: left;
+}
+/* line 549, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner ul#sellingpoints {
+  float: left;
+  margin-left: 79px;
+}
+/* line 552, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner ul#sellingpoints li {
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+}
+/* line 556, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner ul#sellingpoints li a {
+  background: url("http://a1.ak.lscdn.net/deals/images/getfeatured/icons_whypartner.gif") no-repeat scroll center top transparent;
+  color: #262626;
+  display: block;
+  float: left;
+  font-family: "arial rounded mt bold",helvetica,arial,sans-serif;
+  font-size: 20px;
+  line-height: 110%;
+  padding-top: 65px;
+  text-align: center;
+  width: 120px;
+}
+/* line 569, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner ul#sellingpoints li#two a {
+  background-position: center -178px;
+}
+/* line 570, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner ul#sellingpoints li#three a {
+  background-position: center -338px;
+}
+/* line 572, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner h1 {
+  font-size: 31px;
+  font-weight: normal;
+  line-height: 100%;
+  margin-bottom: 20px;
+  text-indent: 0;
+}
+/* line 579, ../../app/stylesheets/screen.scss */
+#whyus #first #whyus #whypartner p {
+  font-size: 16px;
+  width: 397px;
+  float: left;
+  color: #262626;
+}
+/* line 587, ../../app/stylesheets/screen.scss */
+#whyus #first .content {
+  font-size: 22px;
+  line-height: 20px;
+  margin: 88px auto 0;
+}
+/* line 592, ../../app/stylesheets/screen.scss */
+#whyus #first .meat {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+/* line 600, ../../app/stylesheets/screen.scss */
+#whyus #first #col-one {
+  background: url("/images/one.jpg") no-repeat scroll center top transparent;
+  text-align: center;
+  width: 120px;
+  min-height: 500px;
+  width: 316px;
+  float: left;
+  margin-top: 20px;
+  background-color: #F5FF53;
+}
+/* line 610, ../../app/stylesheets/screen.scss */
+#whyus #first #col-two {
+  background: url("/images/two.jpg") no-repeat scroll center top transparent;
+  border-left: 1px dashed #C5C5C5;
+  min-height: 500px;
+  width: 316px;
+  float: left;
+  margin-top: 20px;
+  background-color: #B4E85E;
+}
+/* line 619, ../../app/stylesheets/screen.scss */
+#whyus #first #col-three {
+  background: url("/images/three.jpg") no-repeat scroll center top transparent;
+  float: left;
+  border-left: 1px dashed #C5C5C5;
+  min-height: 500px;
+  width: 316px;
+  margin-top: 20px;
+  background-color: #00BD72;
+}
+
+/* line 630, ../../app/stylesheets/screen.scss */
+#footer {
+  background-color: #333333;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+/* line 635, ../../app/stylesheets/screen.scss */
+#footer #linkbar {
+  color: red;
+}
+/* line 637, ../../app/stylesheets/screen.scss */
+#footer #linkbar ul {
+  text-align: left;
+}
+/* line 640, ../../app/stylesheets/screen.scss */
+#footer #linkbar ul li a {
+  color: #59DEFF;
+}
+
+/* line 648, ../../app/stylesheets/screen.scss */
 #big-box {
   width: 750px;
   margin: 0 auto;
@@ -1521,59 +1653,40 @@ form ul li.field input {
   background-color: #FFFFFF;
   margin-top: 15px;
 }
-/* line 540, ../../app/stylesheets/screen.scss */
-#big-box #footer {
-  background-color: #333333;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-}
-/* line 545, ../../app/stylesheets/screen.scss */
-#big-box #footer #linkbar {
-  color: red;
-}
-/* line 547, ../../app/stylesheets/screen.scss */
-#big-box #footer #linkbar ul {
-  text-align: left;
-}
-/* line 550, ../../app/stylesheets/screen.scss */
-#big-box #footer #linkbar ul li a {
-  color: #59DEFF;
-}
-/* line 557, ../../app/stylesheets/screen.scss */
+/* line 652, ../../app/stylesheets/screen.scss */
 #big-box table {
   padding: 10px;
 }
-/* line 559, ../../app/stylesheets/screen.scss */
+/* line 654, ../../app/stylesheets/screen.scss */
 #big-box table tr th {
   font-weight: bold;
   width: 180px;
 }
-/* line 563, ../../app/stylesheets/screen.scss */
+/* line 658, ../../app/stylesheets/screen.scss */
 #big-box table tr {
   margin-top: 10px;
   padding-bottom: 10px;
 }
-/* line 568, ../../app/stylesheets/screen.scss */
+/* line 663, ../../app/stylesheets/screen.scss */
 #big-box dl, #big-box dt, #big-box dd {
   display: inline;
   font-size: 12px;
   font-weight: bold;
   color: #58595B;
 }
-/* line 574, ../../app/stylesheets/screen.scss */
+/* line 669, ../../app/stylesheets/screen.scss */
 #big-box dd {
   color: green;
 }
-/* line 577, ../../app/stylesheets/screen.scss */
+/* line 672, ../../app/stylesheets/screen.scss */
 #big-box dt {
   margin-right: 2px;
 }
-/* line 578, ../../app/stylesheets/screen.scss */
+/* line 673, ../../app/stylesheets/screen.scss */
 #big-box dl {
   float: left;
 }
-/* line 582, ../../app/stylesheets/screen.scss */
+/* line 677, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #related {
   display: inline;
   float: left;
@@ -1587,14 +1700,14 @@ form ul li.field input {
 * html #big-box #otherdeals #related {
   overflow-x: hidden;
 }
-/* line 588, ../../app/stylesheets/screen.scss */
+/* line 683, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals .deal-item {
   margin-bottom: 15px;
   position: relative;
   width: 209px;
   margin-top: 10px;
 }
-/* line 594, ../../app/stylesheets/screen.scss */
+/* line 689, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside {
   background-color: #FFFFFF;
   color: white;
@@ -1605,18 +1718,18 @@ form ul li.field input {
   box-shadow: #cccccc 0 1px 6px;
   padding: 10px;
 }
-/* line 600, ../../app/stylesheets/screen.scss */
+/* line 695, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .view-image {
   height: 185px;
   overflow: hidden;
   width: 189px;
   margin-right: 10px;
 }
-/* line 605, ../../app/stylesheets/screen.scss */
+/* line 700, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .view-image img {
   max-width: 189px;
 }
-/* line 609, ../../app/stylesheets/screen.scss */
+/* line 704, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .deal-title h2 {
   height: auto;
   line-height: 1.3em;
@@ -1626,35 +1739,35 @@ form ul li.field input {
   margin-top: 3px;
   text-align: left;
 }
-/* line 617, ../../app/stylesheets/screen.scss */
+/* line 712, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .deal-title h2 a {
   text-decoration: none;
   color: #F36C21;
 }
-/* line 621, ../../app/stylesheets/screen.scss */
+/* line 716, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .deal-title h2 a:hover, #big-box #otherdeals #inside .deal-title h2 a:focus {
   color: #F68C51;
 }
-/* line 626, ../../app/stylesheets/screen.scss */
+/* line 721, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals #inside .bottom {
   bottom: 0;
   position: absolute;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 635, ../../app/stylesheets/screen.scss */
+/* line 730, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals .col {
   display: block;
   float: left;
 }
-/* line 639, ../../app/stylesheets/screen.scss */
+/* line 734, ../../app/stylesheets/screen.scss */
 #big-box #otherdeals .middle {
   border-left: 1px dotted #CCCCCC;
   border-right: 1px dotted #CCCCCC;
   margin: 10px 15px 15px;
   padding: 0 14px;
 }
-/* line 646, ../../app/stylesheets/screen.scss */
+/* line 741, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals {
   display: inline;
   float: left;
@@ -1665,7 +1778,7 @@ form ul li.field input {
 * html #big-box ul.otherdeals {
   overflow-x: hidden;
 }
-/* line 648, ../../app/stylesheets/screen.scss */
+/* line 743, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals li {
   display: inline;
   float: left;
@@ -1679,18 +1792,18 @@ form ul li.field input {
 * html #big-box ul.otherdeals li {
   overflow-x: hidden;
 }
-/* line 654, ../../app/stylesheets/screen.scss */
+/* line 749, ../../app/stylesheets/screen.scss */
 #big-box ul.otherdeals #img {
   left: 0;
   position: absolute;
   top: 0;
 }
-/* line 661, ../../app/stylesheets/screen.scss */
+/* line 756, ../../app/stylesheets/screen.scss */
 #big-box #header {
   background-color: #59deff;
   padding-top: 6px;
 }
-/* line 664, ../../app/stylesheets/screen.scss */
+/* line 759, ../../app/stylesheets/screen.scss */
 #big-box #header h1 {
   font-size: 26px;
   text-align: left;
@@ -1698,27 +1811,27 @@ form ul li.field input {
   font-weight: normal;
   padding: 0 20px 5px;
 }
-/* line 670, ../../app/stylesheets/screen.scss */
+/* line 765, ../../app/stylesheets/screen.scss */
 #big-box #header h1 span {
   font-size: 18px;
 }
-/* line 673, ../../app/stylesheets/screen.scss */
+/* line 768, ../../app/stylesheets/screen.scss */
 #big-box #header h1 a {
   font-size: 20px;
 }
 
-/* line 679, ../../app/stylesheets/screen.scss */
+/* line 774, ../../app/stylesheets/screen.scss */
 a {
   text-decoration: none;
   color: #0066cc;
 }
 
-/* line 683, ../../app/stylesheets/screen.scss */
+/* line 778, ../../app/stylesheets/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 686, ../../app/stylesheets/screen.scss */
+/* line 781, ../../app/stylesheets/screen.scss */
 .border-radius {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -1728,7 +1841,7 @@ a:hover {
   border-radius: 7px;
 }
 
-/* line 689, ../../app/stylesheets/screen.scss */
+/* line 784, ../../app/stylesheets/screen.scss */
 body {
   text-align: center;
   color: #262626;
@@ -1739,13 +1852,13 @@ body {
   background-size: cover;
 }
 
-/* line 699, ../../app/stylesheets/screen.scss */
+/* line 794, ../../app/stylesheets/screen.scss */
 #background {
   height: 100%;
   width: 100%;
   position: fixed;
 }
-/* line 703, ../../app/stylesheets/screen.scss */
+/* line 798, ../../app/stylesheets/screen.scss */
 #background img {
   width: 100%;
   height: 100%;
@@ -1754,24 +1867,110 @@ body {
   z-index: -1;
 }
 
-/* line 712, ../../app/stylesheets/screen.scss */
+/* line 807, ../../app/stylesheets/screen.scss */
 #masthead {
   background-color: #262626;
   height: 85px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 717, ../../app/stylesheets/screen.scss */
+/* line 812, ../../app/stylesheets/screen.scss */
 #masthead .hgroup {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
 }
-/* line 722, ../../app/stylesheets/screen.scss */
+/* line 817, ../../app/stylesheets/screen.scss */
+#masthead #promo {
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 10px;
+  max-width: 520px;
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  font-family: 'Merienda One', cursive;
+  font-size: 19px;
+  color: #3Bff68;
+}
+/* line 828, ../../app/stylesheets/screen.scss */
+#masthead #promo button {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: lime;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #baeeba), color-stop(10%, #70db70), color-stop(50%, #30c030), color-stop(50%, #2db42d), color-stop(100%, #43d043));
+  background-image: -webkit-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -moz-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -o-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: -ms-linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  background-image: linear-gradient(#baeeba, #70db70 10%, #30c030 50%, #2db42d 50%, #43d043);
+  border-color: #248f24;
+  text-shadow: green 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-left: 10px;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#masthead #promo button, #masthead #promo button:visited {
+  color: white;
+}
+/* line 31, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#masthead #promo button:hover, #masthead #promo button:focus {
+  background-color: #00f000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #adebad), color-stop(10%, #64d864), color-stop(50%, #2db42d), color-stop(50%, #2aa72a), color-stop(100%, #37cd37));
+  background-image: -webkit-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -moz-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -o-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: -ms-linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  background-image: linear-gradient(#adebad, #64d864 10%, #2db42d 50%, #2aa72a 50%, #37cd37);
+  border-color: #218321;
+  text-shadow: #007000 0px 1px 1px;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#masthead #promo button:hover, #masthead #promo button:hover:visited, #masthead #promo button:focus, #masthead #promo button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#masthead #promo button:active {
+  background-color: #00e000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2db42d), color-stop(30%, #2fbc2f), color-stop(50%, #2bab2b), color-stop(50%, #289f28), color-stop(100%, #3bce3b));
+  background-image: -webkit-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -moz-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -o-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: -ms-linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  background-image: linear-gradient(#2db42d, #2fbc2f 30%, #2bab2b 50%, #289f28 50%, #3bce3b);
+  border-color: #1e761e;
+  text-shadow: #006100 0px -1px -1px;
+  -moz-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  -webkit-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  -o-box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+  box-shadow: #248f24 0 0.08em 0.2em 1px inset;
+}
+/* line 116, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#masthead #promo button:active, #masthead #promo button:active:visited {
+  color: white;
+}
+/* line 833, ../../app/stylesheets/screen.scss */
 #masthead h1 {
   margin: 0;
 }
-/* line 724, ../../app/stylesheets/screen.scss */
+/* line 835, ../../app/stylesheets/screen.scss */
 #masthead h1 a {
   background: url("/images/logo.png");
   height: 80px;
@@ -1779,7 +1978,7 @@ body {
   width: 175px;
 }
 
-/* line 733, ../../app/stylesheets/screen.scss */
+/* line 844, ../../app/stylesheets/screen.scss */
 .nest {
   background: none repeat scroll 0 0 transparent;
   margin: 0 auto;
@@ -1789,7 +1988,7 @@ body {
   z-index: 1000;
 }
 
-/* line 742, ../../app/stylesheets/screen.scss */
+/* line 853, ../../app/stylesheets/screen.scss */
 .ir {
   background-repeat: no-repeat;
   direction: ltr;
@@ -1799,7 +1998,7 @@ body {
   text-indent: -999em;
 }
 
-/* line 752, ../../app/stylesheets/screen.scss */
+/* line 863, ../../app/stylesheets/screen.scss */
 #new-badge {
   color: #8A8A8A;
   font-weight: normal;
@@ -1810,28 +2009,28 @@ body {
   right: 10px;
   top: 12px;
 }
-/* line 762, ../../app/stylesheets/screen.scss */
+/* line 873, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth, #new-badge ul.auth {
   margin-top: 10px;
   padding-top: 14px;
   text-align: center;
 }
-/* line 766, ../../app/stylesheets/screen.scss */
+/* line 877, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth li, #new-badge ul.auth li {
   border-left: 1px solid #DDDDDD;
   float: left;
   padding: 0 8px;
 }
-/* line 770, ../../app/stylesheets/screen.scss */
+/* line 881, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth li a, #new-badge ul.auth li a {
   color: #66C3FE;
 }
-/* line 772, ../../app/stylesheets/screen.scss */
+/* line 883, ../../app/stylesheets/screen.scss */
 #new-badge ul.unauth .first, #new-badge ul.auth .first {
   border: none;
 }
 
-/* line 777, ../../app/stylesheets/screen.scss */
+/* line 888, ../../app/stylesheets/screen.scss */
 .border-radius-example {
   width: 125px;
   height: 125px;

@@ -533,11 +533,101 @@ ul.fields {
   
 
 }
-#big-box {
-  @include container;
+#whyus {
+  width: 950px;
+  overflow: hidden;
+  margin: 15px auto 0;
   background-color: #FFFFFF;
-  margin-top: 15px;
-  #footer {
+  #first {
+    #whyus {
+      padding: 20px;
+      min-height: 200px;
+      #whypartner {
+        color: #9C446D;
+        padding-top: 10px;
+        text-align: left;
+        ul#sellingpoints {
+          float: left;
+          margin-left: 79px;
+          li {
+            float: left;
+            margin-right: 5px;
+            overflow: hidden;
+            a {
+                background: url("http://a1.ak.lscdn.net/deals/images/getfeatured/icons_whypartner.gif") no-repeat scroll center top transparent;
+                color: #262626;
+                display: block;
+                float: left;
+                font-family: "arial rounded mt bold",helvetica,arial,sans-serif;
+                font-size: 20px;
+                line-height: 110%;
+                padding-top: 65px;
+                text-align: center;
+                width: 120px;
+            }
+          }
+        li#two a { background-position: center -178px;}
+        li#three a { background-position: center -338px}
+      }
+        h1 {
+          font-size: 31px;
+          font-weight: normal;
+          line-height: 100%;
+          margin-bottom: 20px;
+          text-indent: 0;
+        }
+        p {
+          font-size: 16px;
+          width: 397px;
+          float: left;
+          color: #262626;
+        }
+      }
+    }
+    .content {
+      font-size: 22px;
+      line-height: 20px;
+      margin: 88px auto 0;
+    }
+    .meat {
+      font-size: 14px;
+      text-align: left;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      padding-right: 10px;
+      padding-top: 10px;
+    }
+    #col-one {
+      background: url("/images/one.jpg") no-repeat scroll center top transparent;
+      text-align: center;
+      width: 120px;
+      min-height: 500px;
+      width: 316px;
+      float: left;
+      margin-top: 20px;
+      background-color: #F5FF53;
+    }
+    #col-two {
+      background: url("/images/two.jpg") no-repeat scroll center top transparent;
+      border-left: 1px dashed #C5C5C5;
+      min-height: 500px;
+      width: 316px;
+      float: left;
+      margin-top: 20px;
+      background-color: #B4E85E;
+    }
+    #col-three {
+      background: url("/images/three.jpg") no-repeat scroll center top transparent;
+      float: left;
+      border-left: 1px dashed #C5C5C5;
+      min-height: 500px;
+      width: 316px;
+      margin-top: 20px;
+      background-color: #00BD72;
+    }
+  }
+}
+#footer {
     background-color: #333333;
     padding-top: 10px;
     padding-left: 15px;
@@ -554,6 +644,11 @@ color: red;
       }
     }
   }
+
+#big-box {
+  @include container;
+  background-color: #FFFFFF;
+  margin-top: 15px;
   table {
     padding: 10px;
     tr th {
@@ -719,7 +814,23 @@ body  {
     margin-top: 0;
     position: relative;
   }
-  h1 {
+#promo {
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 10px;
+  max-width: 520px;
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  font-family: 'Merienda One', cursive;
+  font-size: 19px;
+  color: #3Bff68;
+  button {
+    @include fancy-button(#33CC33, 16px);
+      margin-left: 10px;
+  }
+}
+ h1 {
     margin: 0;
     a {
       background: url("/images/logo.png");
